@@ -1,5 +1,6 @@
 body {
     font: 16px/1 Helvetica, sans-serif;
+	background: #fff
 }
 
 
@@ -10,13 +11,16 @@ body {
 
 .photo {
     float: left;
-    margin: 0 2px 2px 0;
+    margin: 0 5px 5px 0;
     overflow: hidden;
     height: 160px;
+	padding: 20px 0 0 0
 }
 
 .photo,
 .photo img {
     min-width: 160px;
-    max-width: 240px;
+    max-width: 240px
 }
+
+.btn_fav{color: #C36; font-size: 10px; margin: 5px;	cursor: pointer}

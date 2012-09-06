@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Photos</title>
-    <link href="photos.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <h1>Photos</h1>
-    
-    <div id="photos"></div>
-
-	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script src="photos.js"></script>
-    <script>
-    setupPhotos(['squirrel', 'cat'], function (err, result) {
-        if (err) { return console.error(err); }
-    });
-    </script>
-  </body>
+<head>
+<title>Photos</title>
+<link href="css/photos.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 8]>
+    <link href="css/font-awesome-ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body>
+<h1>Photos</h1>
+<div id="photos"></div>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="js/photos.js"></script>
+<script>
+	$('#photos').flickrImgsByTag({tags: ['squirrel', 'pseudotsuga'], max_per_tag: 30}).css({border: '1px dotted #666', margin: '20px', padding: '10px', width: 'auto'});
+</script>
+</body>
 </html>
